@@ -2,12 +2,12 @@
 
 ## 📌 Project Overview
 
-This project focuses on detecting fraudulent credit card transactions using Machine Learning. It involves analyzing transaction data, handling imbalanced classes using Under-Sampling, and building a Logistic Regression model to classify transactions as normal or fraudulent.
+This project focuses on detecting suspicious credit card transactions using Machine Learning. It involves analyzing transaction data, handling imbalanced classes using Under-Sampling, and building a Logistic Regression model to classify transactions as normal or suspicious.
 
 ## 🎯 Project Objectives
 
 - Analyze credit card transaction data.
-- Explore the distribution of normal and fraudulent transactions.
+- Explore the distribution of normal and suspicious transactions.
 - Handle imbalanced data using Under-Sampling.
 - Train a Logistic Regression classification model.
 - Evaluate model performance using multiple evaluation metrics.
@@ -27,15 +27,15 @@ This project focuses on detecting fraudulent credit card transactions using Mach
 The dataset contains credit card transactions classified into two categories:
 
 - **Class 0:** Normal transactions.
-- **Class 1:** Fraudulent transactions.
+- **Class 1:** suspicious transactions.
 
-The original dataset contains a significantly larger number of normal transactions than fraudulent transactions, resulting in an imbalanced dataset.
+The original dataset contains a significantly larger number of normal transactions than suspicious transactions, resulting in an imbalanced dataset.
 
 ## 🔍 Project Workflow
 
 ### 1. Data Exploration and Analysis
 - Loaded and explored the dataset.
-- Analyzed the distribution of normal and fraudulent transactions.
+- Analyzed the distribution of normal and suspicious transactions.
 - Compared the average feature values for both transaction classes.
 
 ### 2. Handling Imbalanced Data
@@ -43,11 +43,11 @@ Applied **Under-Sampling** to reduce the number of normal transactions and creat
 
 The resulting sample contains:
 - 492 normal transactions.
-- 492 fraudulent transactions.
+- 492 suspicious transactions.
 - **Total: 984 transactions.**
 
 ### 3. Model Training
-Trained a **Logistic Regression** model to classify transactions into normal and fraudulent categories.
+Trained a **Logistic Regression** model to classify transactions into normal and suspicious categories.
 
 ### 4. Model Evaluation
 Evaluated the model using the following metrics:
@@ -78,7 +78,7 @@ The Logistic Regression model achieved the following results on the test dataset
 
 The model correctly classified:
 - **93** normal transactions.
-- **89** fraudulent transactions.
+- **89** suspicious transactions.
 
 The model incorrectly classified:
 - **6** normal transactions as fraudulent.
@@ -90,7 +90,7 @@ This project demonstrates a basic Machine Learning workflow for credit card frau
 
 The Logistic Regression model achieved 92.39% test accuracy on the under-sampled test dataset. Precision, Recall, and F1-score were also used to provide a more detailed evaluation of fraud detection performance.
 
-Since Under-Sampling was used, the evaluation results may not represent performance on the original dataset, where fraudulent transactions are much less common.
+Since Under-Sampling was used, the evaluation results may not represent performance on the original dataset, where suspicious transactions are much less common.
 
 ## 🚀 How to Run the Project
 
@@ -105,6 +105,4 @@ Since Under-Sampling was used, the evaluation results may not represent performa
 4. Make sure the dataset is available at the path specified in the notebook.
 5. Run the notebook cells in order.
 
-## 👩‍💻 Author
 
-Created as a Machine Learning practice project to develop skills in data analysis, data preprocessing, classification, and model evaluation.
